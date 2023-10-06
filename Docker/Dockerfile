@@ -1,4 +1,6 @@
 FROM ubuntu
+RUN echo =======
+RUN ls
 WORKDIR Docker
 RUN pwd
 RUN ls
