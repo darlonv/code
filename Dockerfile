@@ -1,3 +1,4 @@
 FROM ubuntu
 RUN apt update
-CMD  ["echo", "hello world"]
+RUN ["echo", "packages updated"]
+CMD ["echo", "hello world"]
