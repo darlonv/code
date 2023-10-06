@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'Docker/*'
+      - code/.github/workflows/docker-image.yml
   #   branches: [ "main" ]
   # pull_request:
   #   branches: [ "main" ]
