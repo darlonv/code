@@ -1,7 +1,7 @@
 FROM ubuntu
 RUN echo =======
 RUN ls
-WORKDIR Docker
+COPY Docker/requirements.txt /requirements.txt
 RUN pwd
 RUN ls
 RUN apt update
