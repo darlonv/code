@@ -1,9 +1,6 @@
-FROM ubuntu
+FROM python:3.11-alpine
 RUN echo =======
-RUN ls
 COPY Docker/requirements.txt /requirements.txt
-RUN pwd
-RUN ls
-RUN apt update
-RUN ["echo", "packages updated"]
+RUN pip3 install -r requirements.txt
+RUN ["echo", "packages installed."]
 CMD ["echo", "hello world"]
